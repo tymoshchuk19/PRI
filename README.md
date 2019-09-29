@@ -1,2 +1,3 @@
 # PRI
-PRI tpc's,
+TPC's 
+Processamento e Representação de Informação.
