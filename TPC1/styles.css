@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(72, 47, 79);
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    padding-left: 40px;
+}
+
+h2 {
+    color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    color: antiquewhite;
+    padding-left: 20px;
+}
+
+h6 {
+    padding-left: 20px;
+    color: gray;
+    margin-bottom: 0px;
+}
+
+div {
+    border-block-end: 2px solid gray;
+    background: rgb(50, 40, 59);
+    padding-left: 50px;
+    padding-right: 50px; 
+    padding-bottom: 10px;
+    padding-top: 10px; 
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.index {
+    color: bisque;
+    list-style: circle;
+    padding-left: 20px;
+    width:100%;
+    text-align:center;
+}
+
+ul.index li{
+    background-color: black;
+    border-block-end: 2px solid gray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    list-style: none;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+a:link, a:visited {
+    color: azure;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+a#galaxies {
+    font-size: 40px;
+}  
+
+a#history {
+    font-size: 20px;
+    padding-left: 30px; 
+} 
+
+a#galaxies:hover {
+    /*TODO*/
+    color: black;
+}   
+
+a#overlay {
+    position: fixed; 
+    bottom: 10%;
+    right: 10%;
+}
+
+p {
+    text-indent: 50px;
+    color: azure;
+}
+
+p.middle {
+    color: gray;
+    font-size: 80%;
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+img.back {
+    width: 40px;
+} 
+
+.pad20px{
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 40px;
+}
