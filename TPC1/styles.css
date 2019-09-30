@@ -75,15 +75,17 @@ a#galaxies {
     font-size: 40px;
 }  
 
-a#history {
-    font-size: 20px;
-    padding-left: 30px; 
-} 
-
 a#galaxies:hover {
-    /*TODO*/
     color: black;
 }   
+
+a#history {
+    color: transparent;
+    font-size: 20px;
+    padding-left: 30px; 
+    transition: 2s;
+
+}
 
 a#overlay {
     position: fixed; 

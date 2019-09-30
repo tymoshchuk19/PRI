@@ -8,12 +8,36 @@
         <div style="position: sticky">
             <ul id="menu">
                 <li>
-                    <audio autoplay loop muted2>                                <source src="mp3/Star Wars - John Williams - Duel Of The Fates.mp3" type="audio/mpeg">
+                    <audio id="music" autoplay loop>                               
+                        <source src="mp3/Star Wars - John Williams - Duel Of The Fates.mp3" type="audio/mpeg">
                     </audio>
                 </li>
-                <li><a href="#galaxies" id="galaxies"><b>Galaxies</b></a></li>
-                <li><a href="#history" id="history"><b>History</b></a></li>
+                <li>
+                    <a onclick="plsmute()" type="button"><img src="images/mute-512.png" style="width: 30px"></img></button>
+                </li>
+                <li>
+                    <a href="#galaxies" onmouseover="setvisible()" onmouseout = "settransparent()" id="galaxies"><b>Galaxies</b></a>
+                </li>
+                <li>
+                    <a href="#history" id="history"><b>History</b></a>
+                </li>
             </ul>
+            <script>
+                    const vid = document.getElementById("music");
+                    const o = document.getElementById("history");
+                    
+                    function plsmute() { 
+                      vid.volume = 0;
+                    } 
+
+                    function setvisible() { 
+                        o.style.color = "azure";
+                    } 
+
+                    function settransparent() {
+                        o.style.color = "transparent";
+                    }
+            </script>
         </div>
         <hr/>
         <a id="overlay" href="#galaxies">
