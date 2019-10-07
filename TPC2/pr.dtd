@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT pr (type,header,workTeam,abstract,deliverables) >
+<!ELEMENT type (#PCDATA) >
+<!ELEMENT header (key,title,subtitle,beginDate,endDate,supervisor) >
+<!ELEMENT key (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT beginDate (#PCDATA) >
+<!ELEMENT endDate (#PCDATA) >
+<!ELEMENT supervisor (#PCDATA) >
+<!ATTLIST supervisor
+    link CDATA #IMPLIED>
+
+<!ELEMENT workTeam (element)+ >
+<!ELEMENT element (#PCDATA) >
+
+<!ELEMENT abstract (par)+ >
+<!ELEMENT par (#PCDATA|b|i)* >
+<!ELEMENT b (#PCDATA) >
+<!ELEMENT i (#PCDATA) >
+
+<!ELEMENT deliverables (it)+ >
+<!ELEMENT it (#PCDATA) >
+<!ATTLIST it
+    link CDATA #IMPLIED>
+
+<!ELEMENT date (#PCDATA) >
+

@@ -1,0 +1,12 @@
+1)
+//entrada[starts-with(./telefone,'253')]
+
+2)
+//entrada[not(starts-with(telefone,'253'))]
+
+3)
+
+4)
+//grupo//entrada/@id
+
+5)

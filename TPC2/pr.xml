@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <type>Project Record</type>
+    <header>
+        <key>PRI-2019-TPC2</key>
+        <title>Aula 2</title>
+        <subtitle>Especificação DTD's</subtitle>
+        <beginDate>3-10-2019</beginDate>
+        <endDate>6-10-2019</endDate>
+        <supervisor link="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </header>
+    <workTeam>
+        <element>Ricardo Canela</element>
+    </workTeam>
+    <abstract>
+        <par>Este <i>Project Record</i> foi criado como forma de praticar a estruturação de informação, usando desta forma uma linguagem 
+            de anotação como é a <b>DTD</b> (<i>Document type definition</i>). Definimos, portanto, a estrutura deste documento
+            num ficheiro DTD que permite a validação e consolidação da materia lecionada na segunda aula de PRI. </par>
+        <par>Posteriormente, usa-mos o <b>XPath</b> para navegar nos ficheiros <b>XML</b> agenda e arqueossitios de maneira a
+            responder as diferentes <i>queries</i> propostas.</par>
+    </abstract>
+    <deliverables>
+        <it link="pr.dtd">Project Record DTD</it>
+        <it link="pr.xml">Project Record XML</it>
+        <it link="agenda.txt">Agenda</it>
+        <it link="arqueossitios.txt">Arqueossítios</it>
+    </deliverables>
+</pr>
