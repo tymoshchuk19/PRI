@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI-2019-TPC3</keyname>
+        <title>Aula 3</title>
+        <subtitle>Transformação de XML utilizando XSLT</subtitle>
+        <bdate>9-10-2019</bdate>
+        <edate>17-10-2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A74568</identifier>
+            <name>Ricardo Canela</name>
+            <email>ricardocanela.ns@gmail.com</email>
+        </member>
+    </workteam>
+    <abstract>
+        <p>Neste TPC é produzido, a partir do documento <b>XML</b>
+            do <i>Project Record</i>, um novo ducumento <b>HTML</b>. A árvore 
+            original é convertida numa nova árvore, reorganizada, utilizando
+            a linguagem <b>XSLT</b>.  
+        </p>
+        <p>
+            Numa segunda faze, o mesmo processo foi utilizado para a representação
+            da informação contida no <i>Dataset</i> sobre arquesítios, gerando
+            desta forma um índice de arqueosítios e a representação individual de cada um.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="pr.html">Project Record</deliverable>
+        <deliverable path="pr.xml">Project Record XML</deliverable>
+        <deliverable path="pr.xsl">Project Record XSLT</deliverable>
+        <deliverable path="pr.dtd">Project Record DTD</deliverable>
+        <deliverable path="../WebSite/index.html">Arqueossítios</deliverable>
+        <deliverable path="../arq.xml">Arqueossítios XML</deliverable>
+        <deliverable path="../arq.xsl">Arqueossítios XSLT</deliverable>
+        <deliverable path="../arq.dtd">Arqueossítios DTD</deliverable>
+    </deliverables>
+</pr>
