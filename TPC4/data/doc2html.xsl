@@ -3,11 +3,11 @@
     version="1.0">
     <xsl:output method="xhtml" indent="yes" encoding="UTF-8"/>
     
-    <xsl:template match="/">
+       <xsl:template match="/">
             <html>
                 <head>
                     <title>Arquivo sonoro EVO</title>
-                    <meta charset="UTF-8"></meta>
+                    <meta charset="utf-8"></meta>
                 </head>
                 <body>
                     <h3>Arquivo Sonoro de Ernesto Veiga de Oliveira</h3>

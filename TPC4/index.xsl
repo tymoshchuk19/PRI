@@ -8,7 +8,7 @@
             <html>
                 <head>
                     <title>Arquivo sonoro EVO</title>
-                    <meta charset="UTF-8"></meta>
+                    <meta charset="utf-8"></meta>
                 </head>
                 <body>
                     <h3>Arquivo Sonoro de Ernesto Veiga de Oliveira</h3>
