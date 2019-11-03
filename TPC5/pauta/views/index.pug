@@ -1,0 +1,50 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4  
+            header.w3-container.w3-teal
+                h3 Inserir aluno:
+            .w3-container
+                form.w3-container(action='/alunos' method='POST')
+                    label.w3-teal
+                        b Nome
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='nome')
+                    label.w3-teal
+                        b Curso
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='curso')
+                    input.w3-btn.w3-blue-grey(type='submit' value='Enviar')
+            footer.w3-container.w3-teal 
+                adress Gerado por notas da turma: jrc-2019
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 Turma
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Nome
+                        th Curso
+                        th Notas
+                        th Remover Aluno
+                    each aluno in turma
+                        tr
+                            td 
+                                button.w3-button(onclick="carregarAluno('" + aluno.id + "')") #{aluno.nome}
+                            td= aluno.curso
+                            td
+                                table.w3-table-all
+                                    tr
+                                        th Indicador
+                                        th Nota
+                                        th Remover Nota
+                                    each nota in aluno.notas
+                                        tr
+                                            td= nota.indicador
+                                            td= nota.nota
+                                            td
+                                                button.w3-button.w3-blue-grey(onclick="removerNota('"+aluno.id+"/notas/"+nota.indicador+"')") Remover
+                            td.w3-center
+                                button.w3-button.w3-blue-grey(onclick="removerAluno('" + aluno.id + "')") Remover
+            footer.w3-container.w3-teal
+                address Gerado por notas da turma.

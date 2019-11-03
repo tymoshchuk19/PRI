@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI-2019-TPC5</keyname>
+        <title>Aula 6</title>
+        <subtitle>Servidor node de ficheiros XML e XSLT</subtitle>
+        <bdate>29-10-2019</bdate>
+        <edate>03-10-2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A74568</identifier>
+            <name>Ricardo Canela</name>
+            <email>ricardocanela.ns@gmail.com</email>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            Nesta etapa é proposto o desenvolvimento de um servidor em <i>node</i> js utilizando o <i>framework
+            <b>express</b></i>, com o propósito de funcionar como uma espécie de pauta, onde podem ser adicionados
+            e removidos alunos e efetuar as mesmas operações para as respetivas notas de cada aluno.
+        </p>
+        <p>
+            Foi então necessário a criação de um ficheiro de rotas <i>alunos.js</i> que trata de interpretar o 
+            pedido, efetuar as alterções necessárias á informação e responder com a página atualizada. Foram 
+            também criados ficheiros adicionais para efetuar chamadas através da libraria <i>axios</i>, para além
+            dos ficheiros em <i>pug</i> geradores das paginas <i>html</i> que permitem a intereação co o utilizador. 
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="/">Project Record</deliverable>
+        <deliverable path="http://localhost:3000/">Pagina inicial</deliverable>
+    </deliverables>
+</pr>
