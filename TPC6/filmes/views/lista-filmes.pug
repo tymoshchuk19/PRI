@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    .w3-container
+        h1 Lista de filmes - PRI 2019
+        table.w3-table-all.w3-hoverable
+            tr
+                th Titulo
+                th Ano
+                th Elenco
+                th Géneros
+                th Remover
+            each filme in filmes 
+                tr
+                    td
+                        a.w3-button(href=`http://localhost:3019/filmes/${filme._id}`)= filme.title
+                    td= filme.year
+                    td= filme.cast
+                    td= filme.genres
+                    td
+                        button.w3-button.w3-red(onclick="removerFilme('" + filme._id + "')") Remover
+

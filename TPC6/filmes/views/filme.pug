@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    .w3-card
+        h1 Titulo #{filme.title}
+        table
+            tr
+                td 
+                    b Ano 
+                td= filme.year
+            tr
+                td 
+                    b Elenco 
+                td= filme.cast
+            tr
+                td 
+                    b Géneros 
+                td= filme.genres

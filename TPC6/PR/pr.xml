@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI-2019-TPC6</keyname>
+        <title>Aula 7</title>
+        <subtitle>Servidor de filmes com persistência</subtitle>
+        <bdate>4-11-2019</bdate>
+        <edate>11-11-2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A74568</identifier>
+            <name>Ricardo Canela</name>
+            <email>ricardocanela.ns@gmail.com</email>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            Nesta etapa é proposto o desenvolvimento de um servidor em <i>node</i> js utilizando o <i>framework
+            <b>express</b></i> e garantindo a presistência em <b>mongodb</b>, com o propósito de geririr um <i>data set</i>,
+            onde podem ser adicionados e removidos filmes.
+        </p>
+        <p>
+            Foi então necessário criar um ficheiro de rotas <i>filmes.js</i> que trata de interpretar o 
+            pedido, por uma questão de gestão foram tambem criadas rotas de api, sendo estas a tratar da comunicação
+            com a base de dados. Para a ligação á base de dados é nessesário a criação de um modelo, filme, 
+            e para efetuar operações utilizamos um controlador sobre o modelo.
+        </p>
+        <p>
+            Foi também criado um script, adicional ao <i>front-end</i>, para efetuar chamadas através da libraria 
+            <i>axios</i>, no caso em questão para efetuar a chamada há rota de remoção de um filme.
+            Para além dos ficheiros em <i>pug</i> geradores das paginas <i>html</i> que permitem a
+            intereação co o utilizador. 
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="/pr.html">Project Record</deliverable>
+        <deliverable path="http://localhost:3019/">Pagina inicial</deliverable>
+    </deliverables>
+</pr>
