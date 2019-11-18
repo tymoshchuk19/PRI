@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI-2019-TPC6</keyname>
+        <title>Aula 7</title>
+        <subtitle>API de obras e compositores</subtitle>
+        <bdate>14-11-2019</bdate>
+        <edate>17-11-2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A74568</identifier>
+            <name>Ricardo Canela</name>
+            <email>ricardocanela.ns@gmail.com</email>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            Nesta etapa é proposto o desenvolvimento de um servidor em 
+            <i>node</i> js utilizando o 
+            <i>framework
+                
+                <b>express</b>
+            </i> e garantindo a presistência em 
+            <b>mongodb</b>, com o propósito de geririr um 
+            <i>data set</i>,
+            onde podem consultadas obras e os compositores com mais obras.
+            
+        </p>
+        
+        <p>
+            Foi então necessário criar um ficheiro de rotas 
+            <i>api.js</i> que trata de interpretar o 
+            pedido. Para a ligação á base de dados é nessesário a criação de um modelo,
+            obras, 
+            e para efetuar operações utilizamos um controlador sobre o modelo.
+            
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="/pr.html">Project Record</deliverable>
+        <deliverable path="http://localhost:3019/">Pagina inicial</deliverable>
+    </deliverables>
+</pr>
