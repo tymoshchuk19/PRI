@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container 
+    header.bg-dark 
+      h1.text-center.text-light CLAV
+    h1 Inserção de Alunos
+    form.w3-container(action="/alunos" method="post")
+        label Estado:
+        p= tip.estado
+        label Sigla:
+        p= tip.sigla
+        label Designação:
+        p= tip.designacao
+    footer.w3-light-gray
+      p clav

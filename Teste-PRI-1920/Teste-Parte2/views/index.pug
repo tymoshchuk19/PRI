@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  .container
+    header.bg-dark 
+      h1.text-center.text-light CLAV
+    p.text-center Lista de tipologias com várias opções de configuração.
+    table.table
+          thead.thead-dark
+            tr
+                th Estado
+                th Sigla
+                th Designação
+                th Id
+            each i in list
+                tr.w3-text-white
+                    td= i.estado
+                    td= i.sigla
+                    td
+                      a(href="http://localhost:3001/ent/ent_" + i.sigla)= i.designacao
+                    td
+                      a(href="http://localhost:3001/tip/" + i.id)= i.id
+    footer.w3-light-gray
+      p clav
